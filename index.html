@@ -153,6 +153,28 @@
               </div>
             </div>
 
+            <!-- Hero Action Buttons: Viewable CV & Download -->
+            <div class="hero-actions">
+              <button type="button" class="btn btn-primary" id="openCvModalBtn" aria-haspopup="dialog" aria-controls="cvModal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>View CV</span>
+              </button>
+              <a href="Beatriz_Baltazar_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-pink" id="downloadCvBtn" download="Beatriz_Baltazar_CV.pdf">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+
           </div>
 
           <!-- Hero Identity Card Visual -->
@@ -192,6 +214,17 @@
                   <span class="id-detail-value">KKK & AWSSBG</span>
                 </div>
               </div>
+
+              <!-- Quick View CV from ID Card -->
+              <button type="button" class="id-card-cv-trigger" id="idCardCvTrigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span>View Official Resume / CV</span>
+              </button>
             </div>
 
 
@@ -1564,6 +1597,55 @@
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
       <div id="modalDynamicContent">
         <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Viewable CV / Resume Modal -->
+  <div class="modal-overlay" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <div class="modal-box modal-box-cv">
+      <div class="cv-modal-header">
+        <div class="cv-modal-title">
+          <div class="desktop-reader-controls" style="margin-right: 6px;">
+            <span class="reader-dot close" id="cvModalCloseDot" style="cursor: pointer;" title="Close viewer"></span>
+            <span class="reader-dot minimize"></span>
+            <span class="reader-dot maximize"></span>
+          </div>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <span id="cvModalTitle">BALTAZAR_CV_2026.pdf</span>
+        </div>
+        <div class="cv-modal-actions">
+          <a href="Beatriz_Baltazar_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-pink cv-action-btn" title="Open PDF in new tab">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>Open New Tab</span>
+          </a>
+          <a href="Beatriz_Baltazar_CV.pdf" download="Beatriz_Baltazar_CV.pdf" class="btn btn-primary cv-action-btn" title="Download CV">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download</span>
+          </a>
+          <button class="modal-close-btn" id="cvModalCloseBtn" aria-label="Close CV viewer" style="position: static; margin-left: 4px;">&times;</button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <object data="Beatriz_Baltazar_CV.pdf#toolbar=1&navpanes=0" type="application/pdf" class="cv-iframe" id="cvPdfObject">
+          <iframe src="Beatriz_Baltazar_CV.pdf#toolbar=1&navpanes=0" class="cv-iframe" title="Beatriz Baltazar Curriculum Vitae">
+            <div class="cv-fallback-view">
+              <p>Your browser does not support inline PDF viewing.</p>
+              <a href="Beatriz_Baltazar_CV.pdf" target="_blank" class="btn btn-primary">Open PDF Directly</a>
+            </div>
+          </iframe>
+        </object>
       </div>
     </div>
   </div>

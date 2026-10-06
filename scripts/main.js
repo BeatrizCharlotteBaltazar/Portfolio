@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initTechFilterBar();
   initProjectModals();
+  initCvModal();
   initContactForm();
   initBackToTop();
   initFontPreviewHelper();
@@ -346,6 +347,50 @@ function initProjectModals() {
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
+// 5b. Interactive Viewable CV / Resume Modal Handler
+function initCvModal() {
+  const cvModal = document.getElementById('cvModal');
+  if (!cvModal) return;
+
+  const openCvBtns = [
+    document.getElementById('openCvModalBtn'),
+    document.getElementById('idCardCvTrigger')
+  ].filter(Boolean);
+
+  const closeBtn = document.getElementById('cvModalCloseBtn');
+  const closeDot = document.getElementById('cvModalCloseDot');
+
+  function openModal() {
+    cvModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    cvModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  openCvBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (closeDot) closeDot.addEventListener('click', closeModal);
+
+  cvModal.addEventListener('click', (e) => {
+    if (e.target === cvModal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cvModal.classList.contains('active')) {
       closeModal();
     }
   });

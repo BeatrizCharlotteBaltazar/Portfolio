@@ -1293,6 +1293,45 @@ body {
   font-weight: 600;
 }
 
+/* Quick View CV Trigger in ID Card */
+.id-card-cv-trigger {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 45, 135, 0.08);
+  border: 1px solid rgba(255, 45, 135, 0.35);
+  border-radius: var(--radius-sm);
+  color: var(--pink-light);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.id-card-cv-trigger svg {
+  color: var(--pink-primary);
+  transition: transform var(--transition-fast);
+}
+
+.id-card-cv-trigger:hover {
+  background: var(--pink-primary);
+  border-color: var(--pink-primary);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 45, 135, 0.35);
+}
+
+.id-card-cv-trigger:hover svg {
+  color: var(--white);
+  transform: scale(1.15);
+}
+
 /* Floating Badges around Card */
 .floating-stat-badge {
   position: absolute;
@@ -3145,6 +3184,92 @@ body {
   border-color: var(--pink-primary);
 }
 
+/* Specialized Viewable CV Modal Box */
+.modal-box-cv {
+  max-width: 960px;
+  width: 95%;
+  height: 88vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #0e0e16;
+  border: 1.5px solid rgba(255, 45, 135, 0.4);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 45, 135, 0.2);
+}
+
+.cv-modal-header {
+  height: 52px;
+  background: #141422;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.cv-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gray-200);
+  font-weight: 600;
+}
+
+.cv-modal-title svg {
+  color: var(--pink-primary);
+}
+
+.cv-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.cv-action-btn {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cv-modal-body {
+  flex-grow: 1;
+  width: 100%;
+  height: calc(100% - 52px);
+  background: #10101a;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #1c1c28;
+}
+
+.cv-fallback-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: var(--gray-300);
+  gap: 1.25rem;
+}
+
 /* Toast Notification */
 .toast-notice {
   position: fixed;
@@ -3826,6 +3951,33 @@ body {
     padding: 1.6rem 1.15rem;
     border-radius: 14px;
     max-height: 88vh;
+  }
+
+  .modal-box-cv {
+    padding: 0;
+    width: 98%;
+    height: 86vh;
+    max-height: 86vh;
+  }
+
+  .cv-modal-header {
+    height: auto;
+    min-height: 46px;
+    padding: 0.5rem 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .cv-modal-title span {
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.74rem;
+  }
+
+  .cv-action-btn {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.55rem;
   }
 
   .modal-close-btn {
