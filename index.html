@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beatriz Baltazar | 3rd-Year IT Student &amp; Technologist</title>
+  <meta name="description"
+    content="Portfolio of Beatriz Baltazar — 3rd-Year IT Student based in Makati, PH. Full-stack developer, adaptive UI/UX designer, and AWSSBG Chief Communication Officer.">
+  <meta name="keywords"
+    content="Beatriz Baltazar, Makati PH, IT Student, Full Stack Developer, UI UX Designer, AWSSBG, Radio Cardinal, Web Portfolio">
+  <meta name="author" content="Beatriz Baltazar">
+
+  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <!-- Interactive Glowing Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Interactive Dynamic Cursor Spotlight -->
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+
+      <div class="icon-container">
+        <a href="index.html"><img src="utilities/imgs/Icon.jpg" alt="Logo"
+            style="width: 50px; height: 50px; border-radius: 50%;"></a>
+
+      </div>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projects & Hackathons</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#strengths" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="nav-cta-btn" id="navCtaBtn">
+        <span>Get in Touch</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#projects">Projects & Hackathons</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#strengths">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Intro Text -->
+          <div class="hero-intro reveal-on-scroll">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>Based in Makati, PH</span>
+              <span class="status-divider">•</span>
+              <span class="status-highlight">3rd-Year IT Student</span>
+            </div>
+
+            <!-- Motto: When Innovation meets Creativity -->
+            <div class="hero-motto-pill">
+              <span class="motto-spark">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"></path>
+                </svg>
+              </span>
+              <span>When Innovation meets Creativity</span>
+              <span class="motto-spark">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"></path>
+                </svg>
+              </span>
+            </div>
+
+            <!-- Requested Opening: "Hey There! I'm Beatriz" with Exmouth from Utilities + Distinct Font for I'm Beatriz -->
+            <div class="hero-title-group">
+              <span class="hero-greeting font-exmouth">Hey There!</span>
+              <h1 class="hero-headline">
+                <span class="hero-name-block font-display">I'm <span class="highlight-pink">Beatriz</span></span>
+              </h1>
+            </div>
+
+            <p class="hero-subhead">
+              Based in Makati, PH. 3rd-year IT student at Mapúa University; creating responsive web apps and systems
+              with
+              adaptive
+              UI/UX, clean code, and a marketing edge.
+            </p>
+
+
+
+            <!-- Key Roles Quick Badges -->
+            <div class="hero-role-badges">
+              <div class="role-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <span>Marketing & Tech Officer — Kamalayang Kapwa Kalikasan</span>
+              </div>
+              <div class="role-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="8.5" cy="7" r="4"></circle>
+                  <polyline points="17 11 19 13 23 9"></polyline>
+                </svg>
+                <span>CCO — AWSSBG-Makati</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Identity Card Visual -->
+          <div class="hero-visual-card">
+
+
+            <div class="id-card-wrapper">
+              <div class="id-card-header">
+                <span class="id-card-chip">Student Leader ID</span>
+                <span class="id-card-university">Information Technology</span>
+              </div>
+
+              <div class="id-card-avatar">
+                <span class="avatar-initials">B</span>
+              </div>
+
+              <div class="id-card-meta">
+                <h2 class="id-card-name">Beatriz Baltazar</h2>
+                <p class="id-card-title">IT Student • UI/UX & Marketing Tech</p>
+              </div>
+
+              <div class="id-card-details">
+                <div class="id-detail-item">
+                  <span class="id-detail-label">Status</span>
+                  <span class="id-detail-value">3rd-Year IT</span>
+                </div>
+                <div class="id-detail-item">
+                  <span class="id-detail-label">Location</span>
+                  <span class="id-detail-value">Makati, PH</span>
+                </div>
+                <div class="id-detail-item">
+                  <span class="id-detail-label">Core Focus</span>
+                  <span class="id-detail-value">UI/UX & Analytics</span>
+                </div>
+                <div class="id-detail-item">
+                  <span class="id-detail-label">Leadership</span>
+                  <span class="id-detail-value">KKK & AWSSBG</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Academic Foundation Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Tech Engineering, UI/UX & Marketing</h2>
+          <p class="section-subtitle">Based in Makati, PH • 3rd-Year IT Student &amp; Technologist</p>
+        </div>
+
+        <!-- 3 Key Highlights Placed Prominently on Top -->
+        <div class="about-top-metrics reveal-on-scroll">
+          <div class="metric-highlight-card">
+            <span class="metric-number">3rd Year</span>
+            <span class="metric-label">BS Information Technology</span>
+          </div>
+          <div class="metric-highlight-card">
+            <span class="metric-number">4+ Roles</span>
+            <span class="metric-label">Executive Leadership & Communications</span>
+          </div>
+          <div class="metric-highlight-card">
+            <span class="metric-number">4 Projects</span>
+            <span class="metric-label">Shipped Games, Analytics & Web Platforms</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1: Creative & UI/UX Technologist -->
+          <div class="about-card reveal-on-scroll">
+            <div class="about-card-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <span>Creative Identity & Vision</span>
+            </div>
+            <h3 class="about-lead">
+              Building websites and systems with adaptive UI/UX tailored to project context and user needs.
+            </h3>
+            <p class="about-text">
+              <strong>Based in Makati, PH</strong>, I am a 3rd-year IT student in Data Enterprise Management. I
+              blend human-centered UI/UX with solid engineering, working hand-in-hand with AI tools to build clean,
+              impactful digital solutions.
+            </p>
+            <div class="about-pill-row">
+              <span class="about-pill">Makati, PH</span>
+              <span class="about-pill">UI/UX Focus</span>
+              <span class="about-pill">Human-Centered Design</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Academic & Leadership Foundation -->
+          <div class="about-card reveal-on-scroll">
+            <div class="about-card-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Academic & Leadership Foundation</span>
+            </div>
+            <h3 class="about-lead">
+              BS in Information Technology (3rd Year) • Data Enterprise Management
+            </h3>
+            <p class="about-text">
+              Coursework in SQL modeling, OOP, cloud systems, and modern web architecture.
+              Active student leader serving as <strong>Marketing & Tech Officer for KKK</strong> and <strong>CCO for
+                AWSSBG-Makati</strong>.
+            </p>
+            <div class="about-pill-row">
+              <span class="about-pill">Makati, PH</span>
+              <span class="about-pill">Data Enterprise</span>
+              <span class="about-pill">Student Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section (ONE Card Divided by Lines — 2 Rows × 3 Columns) -->
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Tech Stack & Tools</h2>
+          <p class="section-subtitle">Categorized breakdown of programming languages, databases, cloud frameworks, and
+            design tools.</p>
+        </div>
+
+        <!-- Single Card Divided With Lines (2 Rows × 3 Columns) -->
+        <div class="tech-unified-grid-card" id="techStackCard">
+          <!-- Row 1, Cell 1: Languages -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Languages</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>C++</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="M4 3h16l-1.5 15L12 21l-6.5-3L4 3z"></path>
+                </svg>
+                <span>HTML</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Python</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M9 16v-2a2 2 0 0 1 2-2"></path>
+                  <path d="M15 12v4"></path>
+                </svg>
+                <span>JavaScript</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                </svg>
+                <span>CSS</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                </svg>
+                <span>Java</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span>PHP</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>C</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 1, Cell 2: Database -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Database</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <span>SQL</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Relational Modeling</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="m21 21-4.35-4.35"></path>
+                  <circle cx="11" cy="11" r="6"></circle>
+                </svg>
+                <span>Schema Design</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 1, Cell 3: Cloud & Frameworks -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Cloud & Frameworks</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+                <span>AWS</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polygon points="6 2 18 2 14 10 22 10 10 22 12 13 4 13 6 2"></polygon>
+                </svg>
+                <span>Azure</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"></ellipse>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse>
+                </svg>
+                <span>React</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 2, Cell 1: Dev & AI Tools -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="6" y1="3" x2="6" y2="15"></line>
+                  <circle cx="18" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Dev & AI Tools</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                <span>GitHub</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <line x1="6" y1="3" x2="6" y2="15"></line>
+                  <circle cx="18" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+                <span>Git</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3 1.5 5.5 4 7v3h8v-3c2.5-1.5 4-4 4-7a8 8 0 0 0-8-8z"></path>
+                </svg>
+                <span>AI Tools (Copilot / Claude)</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>VS Code</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 2, Cell 2: Design Tools -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Design Tools</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <span>Canva</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                </svg>
+                <span>Figma</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+                </svg>
+                <span>UI/UX Prototyping</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span>Brand Collateral</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 2, Cell 3: Data Analytics -->
+          <div class="tech-cell">
+            <div class="tech-cat-header">
+              <div class="tech-cat-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div class="tech-cat-info">
+                <h3 class="tech-cat-title">Data Analytics</h3>
+
+              </div>
+            </div>
+            <div class="tech-cat-chips">
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span>Tableau Public</span>
+              </span>
+              <span class="tech-badge-chip highlight">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <span>Data Analysis</span>
+              </span>
+              <span class="tech-badge-chip">
+                <svg class="tech-chip-icon-pink" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Gaming Cafe Analytics</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impactful Manifesto Section: When Innovation Meets Creativity (Desktop Document Reader) -->
+    <section class="section manifesto-section" id="manifesto">
+      <div class="container">
+        <div class="desktop-reader-frame reveal-on-scroll">
+          <!-- Desktop Titlebar -->
+          <div class="desktop-reader-titlebar">
+            <div class="desktop-reader-controls">
+              <span class="reader-dot close"></span>
+              <span class="reader-dot minimize"></span>
+              <span class="reader-dot maximize"></span>
+            </div>
+            <div class="desktop-reader-doc-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+
+            </div>
+            <div class="desktop-reader-meta">
+              <span class="reader-live-badge">
+                <span class="reader-pulse-dot"></span>
+                <span id="manifestoProgressPercent">0% Read</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Document Desk / Viewport Area -->
+          <div class="desktop-reader-desk">
+            <!-- The "Page They Are Reading" Sheet -->
+            <article class="reading-sheet-page">
+              <!-- Page Header / Top Running Head -->
+              <header class="sheet-running-head">
+                <div class="sheet-head-left">
+                  <span class="sheet-kicker">BEATRIZ CHARLOTTE BALTAZAR</span>
+                  <span class="sheet-divider">/</span>
+                  <span class="sheet-subkicker">MAKATI, PHILIPPINES</span>
+                </div>
+
+              </header>
+
+              <!-- Scrollable Reader Document Container -->
+              <div class="sheet-scrollable-body" id="manifestoScrollBody">
+                <!-- Impactful Headline -->
+                <div class="sheet-title-banner">
+                  <span class="sheet-pretitle font-mono">PHILOSOPHICAL STATEMENT &bull; MANIFESTO</span>
+                  <h2 class="sheet-main-headline">
+                    When <span class="highlight-innovation">Innovation</span> meets <span
+                      class="neon-cursive font-exmouth">Creativity</span>
+                  </h2>
+                  <div class="sheet-accent-line"></div>
+                </div>
+
+                <!-- Editorial Content -->
+                <div class="sheet-editorial-body">
+                  <p class="sheet-lead-paragraph">
+                    <span class="editorial-dropcap">T</span>echnology and design work best together. I engineer
+                    intuitive systems where code precision meets purposeful creative direction—adapting aesthetics
+                    directly to the theme, topic, and context of each build.
+                  </p>
+
+                  <!-- 3 Editorial Pillars -->
+                  <div class="sheet-pillars-row">
+                    <div class="sheet-pillar-card">
+                      <div class="pillar-num font-mono">01 // CODE</div>
+                      <h4 class="pillar-title">Technical Rigor</h4>
+                      <p class="pillar-text">
+                        Scalable full-stack systems built with C++, Python, PHP, and SQL, accelerated with modern AI
+                        tools.
+                      </p>
+                    </div>
+
+                    <div class="sheet-pillar-card">
+                      <div class="pillar-num font-mono">02 // DESIGN</div>
+                      <h4 class="pillar-title">Adaptive Aesthetics</h4>
+                      <p class="pillar-text">
+                        Context-driven UI/UX shaped to the theme and audience of each product, from dark game HUDs to
+                        clean dashboards.
+                      </p>
+                    </div>
+
+                    <div class="sheet-pillar-card">
+                      <div class="pillar-num font-mono">03 // INSIGHT</div>
+                      <h4 class="pillar-title">Data & Narrative</h4>
+                      <p class="pillar-text">
+                        Translating complex data and game logic into clear, engaging user experiences and actionable
+                        insights.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Sign-off Block with Neon Signature -->
+                  <div class="sheet-signoff-block">
+                    <div class="signoff-left">
+                      <p class="signoff-note">Engineered in Makati &bull; Student Leader &bull; CCO AWSSBG</p>
+
+                    </div>
+                    <div class="signoff-signature">
+                      <span class="font-exmouth neon-cursive signature-text">Beatriz Baltazar</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Scroll End Marker -->
+                <div class="sheet-scroll-end">
+                  <span class="scroll-end-sparkle">&bull;</span>
+
+                  <span class="scroll-end-sparkle">&bull;</span>
+                </div>
+              </div>
+
+              <!-- Page Footer Pagination / Reading Progress Strip -->
+              <footer class="sheet-running-footer">
+
+                <div class="sheet-scroll-instruction">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+
+                </div>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Desktop Reader Bezel -->
+          <div class="desktop-reader-bezel">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications spanning indie game UI & storymaking on itch.io, business
+            intelligence on Tableau Public, environmental web advocacy, and governance systems.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Pasabog Game (itch.io) -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--pink-light); margin-left: auto;">beatriz.itch.io/pasabog</span>
+                </div>
+                <div class="mockup-game-hud">
+                  <div class="mockup-game-stats">
+                    <span>HP: 100/100</span>
+                    <span>SP: 85/85</span>
+                    <span style="color: #10b981;">STATUS: BATTLE READY</span>
+                  </div>
+                  <div class="mockup-game-bar-track">
+                    <div class="mockup-game-bar-fill" style="width: 85%;"></div>
+                  </div>
+                  <div class="mockup-game-dialogue">
+                    <div class="mockup-game-avatar">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                        <circle cx="8" cy="12" r="1.5"></circle>
+                        <circle cx="16" cy="12" r="1.5"></circle>
+                      </svg>
+                    </div>
+                    <div class="mockup-game-speech">
+                      <strong style="color: var(--pink-light);">Beatriz (Storymaker):</strong> "The spark is lit—ready
+                      your squad for Pasabog!"
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header-top">
+                <span class="project-category">Game UI/UX & Narrative Design</span>
+                <span class="project-status">Game Jam Winner • itch.io</span>
+              </div>
+
+              <div class="project-role-badge">
+                <span>Role: UI Designer & Storymaker (Winner)</span>
+              </div>
+
+              <h3 class="project-title">Pasabog Game (itch.io)</h3>
+              <p class="project-desc">
+                Game Jam-winning indie title published on itch.io. Led player UI/UX design, interactive HUD elements,
+                and narrative lore.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">itch.io</span>
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Storymaker</span>
+                <span class="project-tag">Interactive Narrative</span>
+                <span class="project-tag">Game Aesthetics</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-icon-only" data-project-trigger="pasabog" id="viewPasabogDetailsBtn"
+                  aria-label="View Project Details" title="View Details">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Liwanag Gaming Cafe Analyst (Tableau Public) -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray-400); margin-left: auto;">public.tableau.com/liwanag-gaming</span>
+                </div>
+                <div class="mockup-tableau-body">
+                  <div class="mockup-tableau-kpis">
+                    <div class="mockup-tableau-kpi-card">
+                      <div class="mockup-tableau-kpi-val">92.4%</div>
+                      <div class="mockup-tableau-kpi-lbl">Peak Occupancy</div>
+                    </div>
+                    <div class="mockup-tableau-kpi-card">
+                      <div class="mockup-tableau-kpi-val">4PM - 10PM</div>
+                      <div class="mockup-tableau-kpi-lbl">Prime Hours</div>
+                    </div>
+                    <div class="mockup-tableau-kpi-card">
+                      <div class="mockup-tableau-kpi-val">2.8 hrs</div>
+                      <div class="mockup-tableau-kpi-lbl">Avg Session</div>
+                    </div>
+                  </div>
+                  <div class="mockup-tableau-chart">
+                    <div class="mockup-tableau-col" style="height: 30%;"></div>
+                    <div class="mockup-tableau-col" style="height: 45%;"></div>
+                    <div class="mockup-tableau-col" style="height: 60%;"></div>
+                    <div class="mockup-tableau-col highlight" style="height: 95%;"></div>
+                    <div class="mockup-tableau-col highlight" style="height: 85%;"></div>
+                    <div class="mockup-tableau-col" style="height: 70%;"></div>
+                    <div class="mockup-tableau-col" style="height: 40%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header-top">
+                <span class="project-category">Data Analytics & Visualization</span>
+                <span class="project-status">Tableau Public Showcase</span>
+              </div>
+
+              <div class="project-role-badge">
+                <span>Role: Lead Data Analyst</span>
+              </div>
+
+              <h3 class="project-title">Liwanag Gaming Cafe Analyst</h3>
+              <p class="project-desc">
+                Tableau Public BI project analyzing PC workstation utilization, prime gaming hours, and operational
+                revenue patterns.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">Tableau Public</span>
+                <span class="project-tag">Data Analysis</span>
+                <span class="project-tag">SQL</span>
+                <span class="project-tag">Business Intelligence</span>
+                <span class="project-tag">KPI Modeling</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-icon-only" data-project-trigger="liwanag" id="viewLiwanagDetailsBtn"
+                  aria-label="View Project Details" title="View Details">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Kamalayang Kapwa Kalikasan -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray-400); margin-left: auto;">kamalayan-kalikasan.org</span>
+                </div>
+                <div class="mockup-body">
+                  <div
+                    style="font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 4px;">
+                    Kamalayang Kapwa Kalikasan</div>
+                  <div class="mockup-bar pink" style="width: 70%;"></div>
+                  <div class="mockup-bar" style="width: 90%;"></div>
+                  <div class="mockup-bar" style="width: 60%;"></div>
+                  <div style="display: flex; gap: 6px; margin-top: 8px;">
+                    <span
+                      style="font-size: 0.62rem; background: rgba(255,45,135,0.2); color: var(--pink-light); padding: 2px 6px; border-radius: 4px;">Eco-Advocacy</span>
+                    <span
+                      style="font-size: 0.62rem; background: rgba(255,255,255,0.08); color: var(--gray-300); padding: 2px 6px; border-radius: 4px;">Kapwa
+                      Solidarity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header-top">
+                <span class="project-category">Advocacy & Web Platform</span>
+                <span class="project-status">Featured Web Project</span>
+              </div>
+
+              <div class="project-role-badge">
+                <span>Role: Marketing & Tech Officer • UI/UX Lead</span>
+              </div>
+
+              <h3 class="project-title">Kamalayang Kapwa Kalikasan</h3>
+              <p class="project-desc">
+                Environmental advocacy web platform connecting Filipino communal solidarity (Kapwa) with grassroots
+                climate education.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">HTML5 / CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Marketing Strategy</span>
+                <span class="project-tag">Eco-Advocacy</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-icon-only" data-project-trigger="kkk" id="viewKkkDetailsBtn"
+                  aria-label="View Project Details" title="View Details">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Project Apex -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray-400); margin-left: auto;">portal.apex-activity.internal</span>
+                </div>
+                <div class="mockup-body">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <span
+                      style="font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: #fff;">Project
+                      Apex Dashboard</span>
+                    <span
+                      style="font-size: 0.6rem; color: #10b981; background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 4px;">Status:
+                      In Review</span>
+                  </div>
+                  <div class="mockup-bar pink" style="width: 85%;"></div>
+                  <div class="mockup-bar" style="width: 95%;"></div>
+                  <div class="mockup-bar" style="width: 45%;"></div>
+                  <div style="display: flex; gap: 6px; margin-top: 8px;">
+                    <span
+                      style="font-size: 0.62rem; background: rgba(255,45,135,0.2); color: var(--pink-light); padding: 2px 6px; border-radius: 4px;">Real-time
+                      Audit</span>
+                    <span
+                      style="font-size: 0.62rem; background: rgba(255,255,255,0.08); color: var(--gray-300); padding: 2px 6px; border-radius: 4px;">Multi-Tier
+                      Review</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header-top">
+                <span class="project-category">Systems & Process Engineering</span>
+                <span class="project-status">Flagship Systems Project</span>
+              </div>
+
+              <div class="project-role-badge">
+                <span>Role: Systems Architecture Lead</span>
+              </div>
+
+              <h3 class="project-title">Project Apex</h3>
+              <p class="project-desc">
+                Centralized governance web portal streamlining student activity proposal submissions, multi-tier
+                approvals, and audit tracking.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">Systems Architecture</span>
+                <span class="project-tag">SQL Modeling</span>
+                <span class="project-tag">Workflow Automation</span>
+                <span class="project-tag">Student Governance</span>
+                <span class="project-tag">Full-Stack Concepts</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-icon-only" data-project-trigger="apex" id="viewApexDetailsBtn"
+                  aria-label="View Project Details" title="View Details">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hackathons & Competitions Section -->
+    <section class="section" id="hackathons">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competitions & Jams</span>
+          <h2 class="section-title">Hackathons Joined</h2>
+          <p class="section-subtitle">High-intensity collaborative prototyping, pitch competitions, and game development
+            jams.</p>
+        </div>
+
+        <div class="hackathons-grid">
+          <!-- Hackathon 1: Game Pitch - Won 2nd Place MISHAP -->
+          <article class="hackathon-card">
+            <div class="hackathon-header-top">
+              <span class="hackathon-award-badge silver">Won 2nd Place</span>
+              <span class="hackathon-date">OCTOBER 22, 2025</span>
+            </div>
+            <h3 class="hackathon-title">Game Pitch Competition</h3>
+            <div class="hackathon-project-name">
+              <span>Project: MISHAP</span>
+            </div>
+            <p class="hackathon-desc">
+              Pitched the original game concept <strong>MISHAP</strong> and won <strong>2nd Place</strong>. Led the
+              gameplay mechanic ideation, aesthetic direction, user flow, and competitive pitch deck delivery.
+            </p>
+            <div class="hackathon-tags">
+              <span class="hackathon-tag">Game Pitch</span>
+              <span class="hackathon-tag">Won 2nd Place</span>
+              <span class="hackathon-tag">MISHAP</span>
+              <span class="hackathon-tag">Concept Design</span>
+              <span class="hackathon-tag">Pitch Presentation</span>
+            </div>
+          </article>
+
+          <!-- Hackathon 2: GAME JAM - PASABOG (Winner) -->
+          <article class="hackathon-card">
+            <div class="hackathon-header-top">
+              <span class="hackathon-award-badge gold">Won Game Jam</span>
+              <span class="hackathon-date">JANUARY 2026</span>
+            </div>
+            <h3 class="hackathon-title">GAME JAM 2026</h3>
+            <div class="hackathon-project-name">
+              <span>Project: PASABOG (Winner)</span>
+            </div>
+            <p class="hackathon-desc">
+              Won the high-intensity rapid game development sprint with the published indie title
+              <strong>PASABOG</strong>! Served as
+              <strong>UI Designer and Storymaker</strong>, crafting the winning player HUD, interface art, and
+              interactive
+              narrative lore.
+            </p>
+            <div class="hackathon-tags">
+              <span class="hackathon-tag">GAME JAM</span>
+              <span class="hackathon-tag">Won Game Jam</span>
+              <span class="hackathon-tag">PASABOG</span>
+              <span class="hackathon-tag">UI Designer</span>
+              <span class="hackathon-tag">Storymaker</span>
+              <span class="hackathon-tag">itch.io</span>
+            </div>
+            <a href="https://lnkd.in/gxYwmerc" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary hackathon-link-btn" id="gameJamPasabogLink">
+              <span>View Game Jam on LinkedIn</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Roles Section (Distinct & Separate from Tech Stack) -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Executive Experience</span>
+          <h2 class="section-title">Leadership & Community Roles</h2>
+          <p class="section-subtitle">Serving as a student leader across marketing & tech advocacy, cloud computing,
+            university broadcasting, and creative media.</p>
+        </div>
+
+        <div class="leadership-grid">
+          <!-- Role 1: Kamalayang Kapwa Kalikasan (Requested) -->
+          <article class="role-card reveal-on-scroll">
+            <div class="role-card-top">
+              <div class="role-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <span class="role-tag"
+                style="background: rgba(255,45,135,0.15); color: var(--pink-light); border: 1px solid var(--pink-border);">Marketing
+                & Tech</span>
+            </div>
+            <h3 class="role-org">Kamalayang Kapwa Kalikasan</h3>
+            <div class="role-title">Marketing & Tech Officer</div>
+            <p class="role-description">
+              Spearheads digital marketing outreach and web platforms for the environmental movement, merging modern
+              technology with youth eco-action.
+            </p>
+            <div class="role-skills">
+              <span class="skill-pill">Marketing Strategy</span>
+              <span class="skill-pill">Tech Management</span>
+              <span class="skill-pill">Eco-Advocacy</span>
+              <span class="skill-pill">Digital Outreach</span>
+            </div>
+          </article>
+
+          <!-- Role 2: AWSSBG-MAKATI -->
+          <article class="role-card reveal-on-scroll">
+            <div class="role-card-top">
+              <div class="role-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <span class="role-tag">Cloud & Tech</span>
+            </div>
+            <h3 class="role-org">AWSSBG-MAKATI</h3>
+            <div class="role-title">Chief Communication Officer (CCO)</div>
+            <p class="role-description">
+              Directs chapter-wide communications, workshop outreach, executive announcements, and student engagement in
+              cloud computing ecosystems.
+            </p>
+            <div class="role-skills">
+              <span class="skill-pill">Executive Communication</span>
+              <span class="skill-pill">AWS Community</span>
+              <span class="skill-pill">Strategic Outreach</span>
+            </div>
+          </article>
+
+          <!-- Role 3: Radio Cardinal -->
+          <article class="role-card reveal-on-scroll">
+            <div class="role-card-top">
+              <div class="role-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+                  <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+                  <path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"></path>
+                </svg>
+              </div>
+              <span class="role-tag">Media & Broadcast</span>
+            </div>
+            <h3 class="role-org">Radio Cardinal</h3>
+            <div class="role-title">Producer</div>
+            <p class="role-description">
+              Oversees technical broadcast operations, host coordination, and program production for the official
+              campus digital radio station.
+            </p>
+            <div class="role-skills">
+              <span class="skill-pill">Audio Production</span>
+              <span class="skill-pill">Broadcast Planning</span>
+              <span class="skill-pill">Creative Direction</span>
+            </div>
+          </article>
+
+          <!-- Role 4: Council of Organizations (COO) - Creatives Member -->
+          <article class="role-card reveal-on-scroll">
+            <div class="role-card-top">
+              <div class="role-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94">
+                  </path>
+                </svg>
+              </div>
+              <span class="role-tag">Design & Branding</span>
+            </div>
+            <h3 class="role-org">Council of Organizations (COO)</h3>
+            <div class="role-title">Creatives Member</div>
+            <p class="role-description">
+              Designs publication materials, event banners, and visual identities across student council programs to
+              enhance brand consistency.
+            </p>
+            <div class="role-skills">
+              <span class="skill-pill">Visual Design</span>
+              <span class="skill-pill">Brand Collateral</span>
+              <span class="skill-pill">Digital Media</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & How I Can Help Section (Vertical Stream) -->
+    <section class="section" id="services">
+      <span id="strengths" style="position: absolute; top: -80px; pointer-events: none; visibility: hidden;"></span>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Services & Capabilities</span>
+          <h2 class="section-title">How I Can Help</h2>
+          <p class="section-subtitle">Delivering high-impact execution across full-stack engineering, business
+            analytics, human-centered UI/UX, and project leadership.</p>
+        </div>
+
+        <div class="services-vertical-stream">
+          <!-- Service 1: Full-Stack Web Development -->
+          <article class="service-row-item reveal-on-scroll">
+            <div class="service-left-meta">
+              <span class="service-index">01</span>
+              <div class="service-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="service-content-body">
+              <div class="service-row-header">
+                <h3 class="service-row-title">Full-Stack Web Development</h3>
+                <span class="service-category-badge">AI-Augmented • Systems Engineering</span>
+              </div>
+              <p class="service-row-desc">
+                I build responsive web applications and reliable systems using modern stacks like HTML, CSS, JavaScript,
+                Python, PHP, and SQL. Working hand-in-hand with AI tools, I accelerate development, streamline
+                debugging, and engineer clean architectures.
+              </p>
+              <div class="service-deliverables">
+                <span class="service-chip">Full-Stack Dev</span>
+                <span class="service-chip">AI Tools & Automation</span>
+                <span class="service-chip">Clean Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: Data Analytics & Business Intelligence -->
+          <article class="service-row-item reveal-on-scroll">
+            <div class="service-left-meta">
+              <span class="service-index">02</span>
+              <div class="service-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="service-content-body">
+              <div class="service-row-header">
+                <h3 class="service-row-title">Data Analytics & Business Intelligence</h3>
+                <span class="service-category-badge">Tableau Public • SQL Aggregations</span>
+              </div>
+              <p class="service-row-desc">
+                I transform raw operational datasets into clear, actionable business intelligence. Using Tableau Public
+                dashboards and SQL aggregations, I analyze trends, peak user activity, and performance metrics.
+              </p>
+              <div class="service-deliverables">
+                <span class="service-chip">Tableau Public</span>
+                <span class="service-chip">SQL Aggregations</span>
+                <span class="service-chip">Data Insights</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3: UI/UX & Interactive Design -->
+          <article class="service-row-item reveal-on-scroll">
+            <div class="service-left-meta">
+              <span class="service-index">03</span>
+              <div class="service-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="service-content-body">
+              <div class="service-row-header">
+                <h3 class="service-row-title">UI/UX & Interactive Design</h3>
+                <span class="service-category-badge">Figma • Human-Centered Design</span>
+              </div>
+              <p class="service-row-desc">
+                I craft intuitive, human-centered interfaces tailored to each product's context, theme, and audience.
+                From game HUDs and
+                playable prototypes to data systems, I merge usability with theme-tailored visual design.
+              </p>
+              <div class="service-deliverables">
+                <span class="service-chip">Figma Prototyping</span>
+                <span class="service-chip">Game HUD Design</span>
+                <span class="service-chip">Brand Identity</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4: Project Management & Communications -->
+          <article class="service-row-item reveal-on-scroll">
+            <div class="service-left-meta">
+              <span class="service-index">04</span>
+              <div class="service-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="service-content-body">
+              <div class="service-row-header">
+                <h3 class="service-row-title">Project Management & Communications</h3>
+                <span class="service-category-badge">Communication-Wise • Executive Leadership</span>
+              </div>
+              <p class="service-row-desc">
+                With proven executive experience as AWSSBG-Makati CCO and Radio Cardinal Producer, I lead
+                cross-functional alignment, stakeholder communications, and persuasive presentations (won 2nd place Game
+                Pitch).
+              </p>
+              <div class="service-deliverables">
+                <span class="service-chip">Stakeholder Alignment</span>
+                <span class="service-chip">Pitch Presentation</span>
+                <span class="service-chip">Executive Communications</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section (Computer Desktop Workstation Design) -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Communication</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Send a message or reach out across channels directly through the workstation
+            console.</p>
+        </div>
+
+        <div class="desktop-workstation-wrapper reveal-on-scroll">
+          <div class="desktop-monitor-frame">
+            <!-- Window Title Bar with Traffic Lights -->
+            <div class="desktop-titlebar">
+              <div class="desktop-window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot maximize"></span>
+              </div>
+              <div class="desktop-window-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                </svg>
+
+              </div>
+              <div class="desktop-status-cluster">
+                <span class="desktop-status-pill">
+                  <span class="desktop-status-dot"></span>
+
+                </span>
+              </div>
+            </div>
+
+            <!-- Monitor Screen Body -->
+            <div class="desktop-screen-body">
+              <!-- Left: System & Channels Pane -->
+              <div class="desktop-sidebar-pane">
+                <h2 class="neon-cursive font-exmouth"
+                  style="font-size: clamp(2.8rem, 5.5vw, 4.2rem); line-height: 1.15; margin-bottom: 0.85rem;">
+                  Let's Collaborate!
+                </h2>
+                <p>
+                  Open for software development, UI/UX design, data analytics, and leadership initiatives. Send a
+                  message or reach out directly below.
+                </p>
+
+                <div class="contact-channels">
+                  <!-- Email -->
+                  <a href="mailto:beatrizcalebralbaltazar@gmail.com" class="contact-channel-item">
+                    <div class="channel-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </div>
+                    <div class="channel-text">
+                      <span class="channel-label">Email</span>
+                      <span class="channel-val">beatrizcalebralbaltazar@gmail.com</span>
+                    </div>
+                  </a>
+
+                  <!-- SMS -->
+                  <a href="sms:09338231048" class="contact-channel-item" id="smsDirectContactLink">
+                    <div class="channel-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                      </svg>
+                    </div>
+                    <div class="channel-text">
+                      <span class="channel-label">SMS / Mobile</span>
+                      <span class="channel-val">09338231048</span>
+                    </div>
+                  </a>
+
+                  <!-- LinkedIn -->
+                  <a href="https://www.linkedin.com/in/beatriz-baltazar-954297393/" target="_blank"
+                    rel="noopener noreferrer" class="contact-channel-item">
+                    <div class="channel-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                    </div>
+                    <div class="channel-text">
+                      <span class="channel-label">LinkedIn</span>
+                      <span class="channel-val">beatriz-baltazar</span>
+                    </div>
+                  </a>
+
+                  <!-- GitHub -->
+                  <a href="https://github.com/BeatrizCharlotteBaltazar" target="_blank" rel="noopener noreferrer"
+                    class="contact-channel-item">
+                    <div class="channel-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="channel-text">
+                      <span class="channel-label">GitHub</span>
+                      <span class="channel-val">BeatrizCharlotteBaltazar</span>
+                    </div>
+                  </a>
+
+                  <!-- Location -->
+                  <div class="contact-channel-item">
+                    <div class="channel-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div class="channel-text">
+                      <span class="channel-label">Location</span>
+                      <span class="channel-val">Makati, PH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Message Form Console -->
+              <div class="desktop-main-pane">
+                <form class="contact-form" id="portfolioContactForm">
+                  <div class="form-group">
+                    <label for="senderName" class="form-label">Your Name</label>
+                    <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderEmail" class="form-label">Your Email</label>
+                    <input type="email" id="senderEmail" class="form-input" placeholder="e.g. alex@example.com"
+                      required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderSubject" class="form-label">Subject</label>
+                    <input type="text" id="senderSubject" class="form-input"
+                      placeholder="e.g. Project Collaboration or Internship" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderMessage" class="form-label">Message</label>
+                    <textarea id="senderMessage" class="form-textarea" placeholder="Write your message here..."
+                      required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary" id="sendMessageSubmitBtn" style="width: 100%;">
+                    <span>Transmit Message</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </button>
+                  <div
+                    style="margin-top: 0.85rem; font-size: 0.78rem; color: var(--gray-400); text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--pink-primary)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 14 14"></polyline>
+                    </svg>
+                    <span>Instant dispatch to Beatriz via FormSubmit & SMS</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Monitor Bottom Bezel with Logo -->
+            <div class="desktop-bottom-bezel">
+              <span class="desktop-chin-logo">BEATRIZ CHARLOTTE BALTAZAR</span>
+            </div>
+          </div>
+
+          <!-- Desktop Monitor Stand Base -->
+          <div class="desktop-stand-neck"></div>
+          <div class="desktop-stand-base"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Deep Dive Modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+      <div id="modalDynamicContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback Notice -->
+  <div class="toast-notice" id="toastNotice" role="alert"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="footer-signature">Beatriz Baltazar</span>
+          <p style="color: var(--gray-400); font-size: 0.9rem; margin-top: 0.35rem;">
+            3rd-Year IT Student • Marketing &amp; Tech Officer • UI/UX &amp; Data Analytics
+          </p>
+        </div>
+        <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+          <a href="https://www.linkedin.com/in/beatriz-baltazar-954297393/" target="_blank" rel="noopener noreferrer"
+            style="color: var(--gray-400); text-decoration: none; font-size: 0.88rem; display: flex; align-items: center; gap: 6px; transition: color var(--transition-fast);">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/BeatrizCharlotteBaltazar" target="_blank" rel="noopener noreferrer"
+            style="color: var(--gray-400); text-decoration: none; font-size: 0.88rem; display: flex; align-items: center; gap: 6px; transition: color var(--transition-fast);">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Beatriz Baltazar. All rights reserved. Built with modern web standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
